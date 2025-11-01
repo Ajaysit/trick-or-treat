@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRICK OR TREAT</title>
+  <style>
+    /* --- Global Styles --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: linear-gradient(135deg, #0a3728, #196f3d);
+      color: #eafaf1;
+      font-family: "Poppins", sans-serif;
+      overflow: hidden;
+    }
+
+    /* --- Message Styling --- */
+    h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      letter-spacing: 1px;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: #b9e4c9;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    /* --- Leaf animation for flair --- */
+    .leaf {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: url('https://cdn-icons-png.flaticon.com/512/415/415733.png') no-repeat center/contain;
+      animation: float 6s infinite ease-in-out;
+      opacity: 0.4;
+    }
+
+    .leaf:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .leaf:nth-child(2) { left: 50%; animation-delay: 2s; }
+    .leaf:nth-child(3) { left: 80%; animation-delay: 1s; }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-10vh) rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <script>
+    // Redirect after 2 seconds
+    setTimeout(() => {
+      window.location.href = "https://www.instagram.com/ecosocialclub_sitb/"; // Replace with your final webpage link
+    }, 3000);
+  </script>
+</head>
+<body>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+  <div class="leaf"></div>
+
+  <h1>you have been tricked !</h1>
+  <p>Now you have to follow  us🌴</p>
+</body>
+</html>
